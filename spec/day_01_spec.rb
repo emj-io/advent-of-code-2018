@@ -5,7 +5,7 @@ describe Day01::PuzzleA do
   describe '.result_frequency_of_array' do
     it 'adds 0 plus all deltas' do
       test_deltas = [1, 2, 3]
-      expect(Day01::PuzzleA.result_frequency_of_array(test_deltas)).to eq (Day01::PuzzleA+1+2+3)
+      expect(Day01::PuzzleA.result_frequency_of_array(test_deltas)).to eq (Day01::PuzzleA::START_FREQUENCY + 1 + 2 + 3)
     end
 
     it 'raises if any delta is not +-able' do
