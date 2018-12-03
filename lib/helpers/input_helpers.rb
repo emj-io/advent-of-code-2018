@@ -2,7 +2,7 @@ module Helpers
   module InputHelpers
     def self.filename_to_array_of_strings(filename)
       File.open(filename, 'r') do |file|
-        file.readlines.split("\n")
+        file.readlines.map {|line| line.strip}
       end
     end
 
